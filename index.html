@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aether — The Future of Finance</title>
+  <meta name="description" content="The world's most intelligent financial super-app. Join the waitlist." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="/public/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════ -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <span class="logo-mark">Æ</span>
+      <span class="logo-text">ETHER</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Launching 2026</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Finance,</span>
+        <span class="hero-title-line italic">reimagined.</span>
+      </h1>
+      <p class="hero-subtitle">
+        The world's first truly intelligent financial super-app.<br />
+        Built for those who expect more from their money.
+      </p>
+      <a href="#waitlist" class="hero-btn">
+        <span>Secure your place</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <!-- Three.js canvas -->
+    <div class="card-scene" id="cardScene">
+      <canvas id="threeCanvas"></canvas>
+      <!-- CSS fallback card (shown if WebGL unavailable) -->
+      <div class="css-card" id="cssCard" style="display:none;">
+        <div class="css-card-inner">
+          <div class="css-card-chip"></div>
+          <div class="css-card-logo">Æ</div>
+          <div class="css-card-number">•••• •••• •••• 2026</div>
+          <div class="css-card-name">AETHER MEMBER</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       STATS STRIP
+  ══════════════════════════════════════════════ -->
+  <section class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-number">£0</span>
+      <span class="stat-label">Hidden fees, ever</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-number">AI</span>
+      <span class="stat-label">Powered insights</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-number">1</span>
+      <span class="stat-label">App for everything</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-number">∞</span>
+      <span class="stat-label">Possibilities</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FEATURES
+  ══════════════════════════════════════════════ -->
+  <section class="features" id="features">
+    <div class="features-header">
+      <div class="section-eyebrow">Capabilities</div>
+      <h2 class="section-title">Everything you need.<br /><em>Nothing you don't.</em></h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card feature-large">
+        <div class="feature-icon">
+          <!-- Animated SVG Growth Chart -->
+          <svg class="growth-chart" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="chartGrad" x1="0" y1="0" x2="200" y2="0">
+                <stop offset="0%" stop-color="#B8902A"/>
+                <stop offset="100%" stop-color="#F0C060"/>
+              </linearGradient>
+            </defs>
+            <!-- Grid lines -->
+            <line x1="0" y1="100" x2="200" y2="100" stroke="#1a2035" stroke-width="1"/>
+            <line x1="0" y1="70" x2="200" y2="70" stroke="#1a2035" stroke-width="1"/>
+            <line x1="0" y1="40" x2="200" y2="40" stroke="#1a2035" stroke-width="1"/>
+            <line x1="0" y1="10" x2="200" y2="10" stroke="#1a2035" stroke-width="1"/>
+            <!-- Chart fill -->
+            <path class="chart-fill"
+              d="M0 100 L0 85 C20 85 30 72 50 65 C70 58 80 55 100 42 C120 29 130 30 150 20 C170 10 180 12 200 8 L200 100 Z"
+              fill="url(#chartGrad)" opacity="0.12"/>
+            <!-- Chart line -->
+            <path class="chart-line"
+              d="M0 85 C20 85 30 72 50 65 C70 58 80 55 100 42 C120 29 130 30 150 20 C170 10 180 12 200 8"
+              stroke="url(#chartGrad)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- Dot -->
+            <circle class="chart-dot" cx="200" cy="8" r="4" fill="#F0C060"/>
+          </svg>
+        </div>
+        <h3>Predictive Wealth Intelligence</h3>
+        <p>AI that analyses your spending, investments, and market trends to forecast your financial future — and guide you toward it.</p>
+        <div class="feature-tag">AI Core</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-sm">◈</div>
+        <h3>Unified Portfolio</h3>
+        <p>Stocks, crypto, property, savings — every asset in one beautifully simple view.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-sm">⟁</div>
+        <h3>Instant Global Transfers</h3>
+        <p>Move money anywhere on earth, in seconds, with institutional-grade FX rates.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-sm">◉</div>
+        <h3>Aether Metal Card</h3>
+        <p>A precision-machined, weightless metal card. No card number printed — ever.</p>
+      </div>
+
+      <div class="feature-card feature-wide">
+        <div class="feature-icon-sm">⬡</div>
+        <h3>Private Banking, Democratised</h3>
+        <p>Concierge-level financial support, available to everyone. Your personal CFO, always on.</p>
+        <div class="feature-tag">Coming Q3 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       WAITLIST / SIGN-UP FORM
+  ══════════════════════════════════════════════ -->
+  <section class="waitlist" id="waitlist">
+    <div class="waitlist-bg"></div>
+    <div class="waitlist-inner">
+      <div class="waitlist-copy">
+        <div class="section-eyebrow">Waitlist</div>
+        <h2 class="section-title">Be first.<br /><em>Be Aether.</em></h2>
+        <p class="waitlist-desc">We're opening access by invitation only. Secure your place on the founding waitlist and receive exclusive early-member benefits.</p>
+        <ul class="waitlist-perks">
+          <li>Zero fees for your first year</li>
+          <li>Founding member metal card</li>
+          <li>Priority access to AI features</li>
+        </ul>
+      </div>
+
+      <div class="form-wrap" id="formWrap">
+        <div class="frosted-form">
+          <div class="form-header">
+            <span class="logo-mark small">Æ</span>
+            <span>Join the waitlist</span>
+          </div>
+
+          <form id="signupForm" novalidate>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" required />
+              <span class="field-error" id="firstNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <span class="field-error" id="emailError"></span>
+            </div>
+
+            <div class="consent-wrap">
+              <label class="consent-label">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span class="custom-check"></span>
+                <span class="consent-text">I agree to receive updates and marketing emails about this app. I can unsubscribe at any time.</span>
+              </label>
+              <span class="field-error" id="consentError"></span>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span id="btnText">Secure my place</span>
+              <span id="btnLoader" style="display:none;">
+                <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="15"/></svg>
+              </span>
+            </button>
+
+            <div class="inline-error" id="inlineError" style="display:none;">
+              Something went wrong. Please try again or contact us directly.
+            </div>
+          </form>
+
+          <div class="form-legal">
+            <p>Privacy &amp; Data: We only collect your name and email address to provide waitlist updates. Your data is processed in accordance with the UK GDPR. Lawful basis: Consent. <a href="/privacy.html">Privacy Policy</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Success state -->
+      <div class="success-state" id="successState" style="display:none;">
+        <div class="success-icon">✦</div>
+        <h3>Welcome to the future of finance.</h3>
+        <p>Check your inbox for a message from our team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">Æ</span>
+        <span class="logo-text">ETHER</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="mailto:hello@aether.finance">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Aether Finance Ltd. All rights reserved.<br />Aether Finance Ltd is not yet authorised by the FCA. This page is for waitlist registration only.</p>
+    </div>
+  </footer>
+
+  <script src="/public/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "aether-finance",
+  "version": "1.0.0",
+  "description": "Aether Finance — Waitlist Landing Page",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  }
+}

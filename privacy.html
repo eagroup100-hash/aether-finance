@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Aether Finance</title>
+  <meta name="description" content="Aether Finance privacy policy. UK GDPR compliant." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/public/style.css" />
+
+  <style>
+    /* Privacy-page specific styles */
+    .privacy-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 9rem 2rem 6rem;
+    }
+
+    .privacy-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold-dim);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      transition: color 0.2s;
+    }
+    .privacy-back:hover { color: var(--gold); }
+    .privacy-back svg { transition: transform 0.2s; }
+    .privacy-back:hover svg { transform: translateX(-3px); }
+
+    .privacy-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .privacy-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .privacy-date {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-dim);
+    }
+
+    .privacy-section {
+      margin-bottom: 3rem;
+    }
+
+    .privacy-section h2 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .privacy-section h2 .num {
+      color: var(--gold);
+      margin-right: 0.5rem;
+      font-style: italic;
+    }
+
+    .privacy-section p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 0.85rem;
+    }
+
+    .privacy-section ul {
+      list-style: none;
+      margin: 0.5rem 0 1rem;
+      padding: 0;
+    }
+
+    .privacy-section ul li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 0.3rem;
+    }
+
+    .privacy-section ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--gold-dim);
+      font-size: 0.5rem;
+      top: 0.4rem;
+    }
+
+    .privacy-section a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+    .privacy-section a:hover { color: var(--gold-light); }
+
+    .privacy-highlight {
+      background: rgba(201,151,58,0.06);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .privacy-highlight p {
+      margin: 0;
+      color: var(--text);
+    }
+
+    .privacy-highlight strong {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .privacy-divider {
+      border: none;
+      border-top: 1px solid var(--border-dim);
+      margin: 2.5rem 0;
+    }
+
+    .privacy-footer-note {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-dim);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled">
+    <div class="nav-logo">
+      <span class="logo-mark">Æ</span>
+      <span class="logo-text">ETHER</span>
+    </div>
+    <div class="nav-links">
+      <a href="/" class="nav-cta">← Back to home</a>
+    </div>
+  </nav>
+
+  <main class="privacy-wrap">
+
+    <a href="/" class="privacy-back">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to home
+    </a>
+
+    <div class="privacy-eyebrow">Legal</div>
+    <h1 class="privacy-title">Privacy Policy</h1>
+    <p class="privacy-date">Last updated: June 2026</p>
+
+    <!-- 1 -->
+    <div class="privacy-section">
+      <h2><span class="num">1.</span> Who we are</h2>
+      <p>Aether Finance Ltd ("Aether", "we", "us", "our") operates the waitlist registration service at aether.finance. We are the data controller for the personal data collected through this website.</p>
+      <div class="privacy-highlight">
+        <p><strong>Data Controller contact:</strong><br />
+        Aether Finance Ltd<br />
+        Email: <a href="mailto:{{ IONOS_EMAIL }}">contact us via our registered email address</a><br />
+        For data requests, please use the subject line: "Data Request — UK GDPR"</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="privacy-section">
+      <h2><span class="num">2.</span> What data we collect</h2>
+      <p>We collect only the minimum personal data necessary to operate the waitlist service. The data we collect is strictly limited to:</p>
+      <ul>
+        <li><strong>First name</strong> — to personalise communications with you</li>
+        <li><strong>Email address</strong> — to send you waitlist updates and onboarding information</li>
+      </ul>
+      <p>We do not collect payment information, device identifiers, IP addresses for tracking purposes, or any special category data as defined under UK GDPR Article 9. We do not use any third-party analytics scripts, tracking pixels, or advertising technology on this website.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="privacy-section">
+      <h2><span class="num">3.</span> How we use your data</h2>
+      <p>Your personal data is used exclusively for the following purpose:</p>
+      <ul>
+        <li>To add you to the Aether waitlist and provide updates about the launch and your position on the list</li>
+        <li>To send you onboarding communications when Aether becomes available</li>
+        <li>To send marketing emails about Aether's features, launch timeline, and related news — only where you have given explicit consent</li>
+      </ul>
+      <p>We will never sell, rent, or share your personal data with third parties for their own marketing purposes.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="privacy-section">
+      <h2><span class="num">4.</span> Lawful basis for processing</h2>
+      <div class="privacy-highlight">
+        <p><strong>Lawful basis: Consent</strong> (UK GDPR Article 6(1)(a))</p>
+      </div>
+      <p>We process your personal data solely on the basis of your freely given, specific, informed, and unambiguous consent, provided at the time of registration via the mandatory marketing consent checkbox.</p>
+      <p>You have the right to withdraw your consent at any time. Withdrawal of consent will not affect the lawfulness of processing based on consent before its withdrawal.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="privacy-section">
+      <h2><span class="num">5.</span> Data retention</h2>
+      <p>We will retain your personal data for as long as you remain on the Aether waitlist or are an active subscriber to our communications. If you withdraw consent or request deletion, we will delete your personal data within 30 days, except where we are required to retain it by law.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="privacy-section">
+      <h2><span class="num">6.</span> Your rights under the UK GDPR</h2>
+      <p>Under the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018, you have the following rights:</p>
+      <ul>
+        <li><strong>Right to access</strong> — request a copy of the personal data we hold about you</li>
+        <li><strong>Right to rectification</strong> — ask us to correct inaccurate or incomplete data</li>
+        <li><strong>Right to erasure</strong> — request deletion of your personal data ("right to be forgotten")</li>
+        <li><strong>Right to restrict processing</strong> — ask us to limit how we use your data</li>
+        <li><strong>Right to data portability</strong> — receive your data in a structured, machine-readable format</li>
+        <li><strong>Right to withdraw consent</strong> — withdraw your marketing consent at any time</li>
+        <li><strong>Right to lodge a complaint</strong> — with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a></li>
+      </ul>
+      <p>To exercise any of these rights, please email us with the subject line <em>"Data Request — UK GDPR"</em>. We will respond within one calendar month.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="privacy-section">
+      <h2><span class="num">7.</span> How to withdraw consent or request deletion</h2>
+      <p>You may withdraw your consent and/or request deletion of your personal data at any time by:</p>
+      <ul>
+        <li>Clicking "unsubscribe" in any email we send you</li>
+        <li>Emailing us directly with the subject line "Unsubscribe" or "Delete my data"</li>
+      </ul>
+      <p>Upon receipt of your request, we will remove your data from our waitlist and all associated systems within 30 days and confirm deletion to you in writing.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="privacy-section">
+      <h2><span class="num">8.</span> Data security</h2>
+      <p>We take the security of your personal data seriously. Your data is stored using Vercel's infrastructure with appropriate technical and organisational security measures, including encryption in transit and at rest. Access to personal data is restricted to authorised personnel only.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="privacy-section">
+      <h2><span class="num">9.</span> Cookies & tracking</h2>
+      <p>This website does not use cookies for tracking or analytics purposes. We do not use Google Analytics, Meta Pixel, or any other third-party tracking technology. No cookies are set on your device beyond those strictly necessary to serve this web page.</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="privacy-section">
+      <h2><span class="num">10.</span> Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. Where changes are material, we will notify you by email if you are on our waitlist.</p>
+    </div>
+
+    <div class="privacy-footer-note">
+      This policy was prepared to comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. Aether Finance Ltd is not yet authorised or regulated by the Financial Conduct Authority (FCA). This website is for waitlist registration purposes only.
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">Æ</span>
+        <span class="logo-text">ETHER</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/">Home</a>
+      </div>
+      <p class="footer-copy">© 2026 Aether Finance Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
